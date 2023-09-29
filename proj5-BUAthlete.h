@@ -5,7 +5,7 @@
 enum Position {OL, QB, RB, WR, TE, DL, DE, LB, CB, S, K}; 
 
 
-class BUAthlete {
+class BUAthlete : public NCAAAthlete{
     protected:
         int evaluation;
         Position bestFit;

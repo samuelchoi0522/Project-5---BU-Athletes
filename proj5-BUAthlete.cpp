@@ -15,4 +15,15 @@ Position BUAthlete::getPosition(){
 }
 string BUAthlete::toString(){
     ostringstream out;
+
+    out << "ID: " << this->athleteID << endl;
+    out << "Name: " << this->athleteName << endl;
+
+    if( this->athleteLOI ){
+        out << "School: " << this->schoolChoice << endl;
+    } else {
+        out << "Available" << endl;
+    }
+
+    return out.str();
 }

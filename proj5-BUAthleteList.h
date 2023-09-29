@@ -1,14 +1,21 @@
 #ifndef PROJ5_BUATHLETELIST_H
 #define PROJ5_BUATHLETELIST_H
 #include "proj5-BUAthlete.h"
+#include <iostream>
 
 
-class BUAthleteList{
+
+class BUAthleteList : public BUAthlete{
     private:
-        BUAthlete *list;
         int capacity;
         int size;
-        void resizeArray();
+        BUAthlete *athletes;
+
+        void resizeArray(){
+            if(capacity == size){
+                capacity += 2;
+            }
+        }
 
     public:
         void addNCAAAthlete(int ID, string name, string LOI, string school);
