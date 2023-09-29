@@ -1,5 +1,5 @@
-#ifndef NCAAATHLETE_H
-#define NCAAATHLETE_H
+#ifndef PROJ5_NCAAATHLETE_H
+#define PROJ5_NCAAATHLETE_H
 
 #include <string>
 
