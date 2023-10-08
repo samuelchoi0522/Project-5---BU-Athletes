@@ -2,14 +2,23 @@
 #define PROJ5_BUATHLETE_H
 #include "proj5-NCAAAthlete.h"
 
-class BUAthlete {
+enum Position {OL, QB, RB, WR, TE, DL, DE, LB, CB, S, K}; 
+
+
+class BUAthlete : public NCAAAthlete{
     protected:
         int evaluation;
-        Position *bestFit = new Position;
+        Position bestFit;
+    public:
+        void setEvaluation(int);
+        void setPosition(Position);
+        int getEvaluation();
+        Position getPosition();
+        string toString();
+        Position stringToPosition(const string&);
 };
 
-class Position{
+int stringToInt(char*);
 
-};
 
 #endif
