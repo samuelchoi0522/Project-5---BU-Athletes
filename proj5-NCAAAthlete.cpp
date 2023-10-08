@@ -25,7 +25,7 @@ void NCAAAthlete::setLOI(string loi){
 }
 
 int NCAAAthlete::getID(){
-    return this->athleteID;
+    return athleteID;
 }
 
 string NCAAAthlete::getName(){

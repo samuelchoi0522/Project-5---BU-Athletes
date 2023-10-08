@@ -15,7 +15,10 @@ class BUAthlete : public NCAAAthlete{
         int getEvaluation();
         Position getPosition();
         string toString();
+        Position stringToPosition(const string&);
 };
+
+int stringToInt(char*);
 
 
 #endif
